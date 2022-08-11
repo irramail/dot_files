@@ -1,0 +1,13 @@
+# ~/.config/tmuxinator/axmix.yml
+
+name: axmix
+root: ~/projects/test/next/axmix
+
+windows:
+  - editor:
+      layout: 543e,212x58,0,0[212x49,0,0,80,212x8,0,50{106x8,0,50,81,105x8,107,50,83}]
+
+      panes:
+        - emacs Cargo.toml
+        - bacon
+        - wasm-pack build --target web ; python3 -m http.server  8000
